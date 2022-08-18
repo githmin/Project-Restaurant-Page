@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
 
 *{
     margin: 0;
@@ -6,7 +8,7 @@
     background-color: #224252a;
 }
 
-li, button{
+li, a, button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -59,7 +61,48 @@ footer{
     justify-content: center;
 }
 
-.content{
-    border: 1px solid white;
+
+#home__content{
+    /* border: 1px solid white; */
     height: calc(100vh - 180px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#home__text{
+    font-family: 'Kanit', sans-serif;
+    font-size: 125px;
+    color: orangered;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: black;
+}
+#home__location{
+    font-family: 'Kaushan Script', sans-serif;
+    font-size: 60px;
+    color: orangered;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+}
+
+.content{
+    background-image: url(./assets/pizza.webp);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.overlay{
+    background-color:rgba(0, 0, 0, 0.5) ;
+}
+
+.home__menu{
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: orangered;
+    border: none;
+    margin-top: 50px;
 }
