@@ -4,4 +4,4 @@ import openAbout from '../src/about.js'
 
 // openHome();
 // openMenu();
-openAbout();
+// openAbout();

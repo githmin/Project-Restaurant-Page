@@ -200,15 +200,18 @@ button:hover{
     flex-direction: column;
     max-width: 500px;
 }
-.aboutImg{
-    width: 300px;
-}
+
 .about{
     display: flex;
     flex-direction: column;
     text-align: center;
     align-items: center;
-
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+}
+.aboutImg{
+    width: 300px;
+    margin: 40px;
 }
 
 .aboutLogo{
@@ -217,15 +220,18 @@ button:hover{
     border-radius: 10px 20px;
     padding: 5px 25px;
     background-color: #27282D;
+    color: white;
 }
 
 .since{
     font-family: 'Kaushan Script', sans-serif;
     margin-top: 5px;
+    color: black;
 }
 
 .aboutPara{
     text-align: center;
-    margin: 20px;
+    margin: 40px;
     font-weight: 900;
+    color: black;
 }

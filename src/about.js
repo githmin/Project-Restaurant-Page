@@ -14,7 +14,7 @@ export default function openAbout(){
     about.appendChild(img);
 
     let h1 = document.createElement('h1');
-    h1.classList.add('h1');
+    h1.classList.add('aboutLogo');
     h1.innerText = "Bake n` take";
     about.appendChild(h1);
 
