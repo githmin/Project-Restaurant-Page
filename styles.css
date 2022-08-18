@@ -5,7 +5,11 @@
 *{
     margin: 0;
     padding: 0;
-    background-color: #224252a;
+    background-color: #22425;
+}
+
+body{
+    cursor: url(./assets/pizza-icon.ico), auto;
 }
 
 li, a, button{
@@ -25,7 +29,7 @@ header{
 }
 
 .logo{
-    margin-right: auto;
+    margin-right: auto; 
     cursor: pointer;
     border: 2px solid orangered;
     border-radius: 10px 20px;
@@ -59,9 +63,15 @@ header{
 footer{
     display:  flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 
-
+.footer__img{
+    position: relative;
+    top: 10px;
+    left: 5px;
+    filter: invert(1);
+}
 #home__content{
     /* border: 1px solid white; */
     height: calc(100vh - 180px);
@@ -70,6 +80,7 @@ footer{
     justify-content: center;
     flex-direction: column;
 }
+
 
 #home__text{
     font-family: 'Kanit', sans-serif;
@@ -81,11 +92,16 @@ footer{
 #home__location{
     font-family: 'Kaushan Script', sans-serif;
     font-size: 60px;
+    font-weight: 900;
     color: orangered;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
 }
 
+.location{
+    max-width: 50px;
+    filter:invert(1);
+}
 .content{
     background-image: url(./assets/pizza.webp);
     -webkit-background-size: cover;
@@ -97,12 +113,21 @@ footer{
 
 .overlay{
     background-color:rgba(0, 0, 0, 0.5) ;
+    height: calc(100vh - 180px);
+
 }
 
 .home__menu{
     padding: 10px 20px;
     border-radius: 20px;
-    background-color: orangered;
+    background-color: rgb(255, 69, 0);
     border: none;
     margin-top: 50px;
 }
+
+button:hover{
+    background-color:rgba(255, 68, 0, 0.8);
+    transition: 0.2s ease-out;
+}
+
+
