@@ -32,7 +32,7 @@ header{
 .logo{
     margin-right: auto; 
     cursor: pointer;
-    border: 2px solid orangered;
+    border: 5px solid orangered;
     border-radius: 10px 20px;
     padding: 5px 25px;  
 }
@@ -191,4 +191,41 @@ button:hover{
 
 ::-webkit-scrollbar {
     background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.about__container{
+    height: calc(100vh - 180px);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 500px;
+}
+.aboutImg{
+    width: 300px;
+}
+.about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
+}
+
+.aboutLogo{
+    cursor: pointer;
+    border: 5px solid orangered;
+    border-radius: 10px 20px;
+    padding: 5px 25px;
+    background-color: #27282D;
+}
+
+.since{
+    font-family: 'Kaushan Script', sans-serif;
+    margin-top: 5px;
+}
+
+.aboutPara{
+    text-align: center;
+    margin: 20px;
+    font-weight: 900;
 }
