@@ -22,16 +22,8 @@ about.addEventListener("click", clearContainers);
 about.addEventListener("click", openAbout);
 
 
-// function viewMenu(){
-//     console.log("what")
-//     menu.addEventListener("click", clearContainers);
-//     menu.addEventListener("click", openMenu);
-//     return;
-// }
-
 const myButton = document.querySelector('.home__menu');
 myButton.addEventListener("click" , () => {
     clearContainers();
     openMenu();
-    console.log("huh?")
 } );

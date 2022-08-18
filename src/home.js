@@ -8,4 +8,9 @@ export default function openHome(){
     newP2.setAttribute("id","home__location");
     newP2.innerHTML = "COLOMBO, LK";
     home__content.appendChild(newP2);
+    let button = document.createElement('button');
+    button.innerText = "View Menu";
+    button.classList.add('home__menu');
+    button.setAttribute("id", "menuBtn");
+    home__content.appendChild(button);
 }
