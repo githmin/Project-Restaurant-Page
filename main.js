@@ -20,6 +20,16 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
 
 /***/ }),
 
+/***/ "./src/clearContainers.js":
+/*!********************************!*\
+  !*** ./src/clearContainers.js ***!
+  \********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (/* binding */ clearContainers)\n/* harmony export */ });\nfunction clearContainers(){\n    let home__content = document.getElementById('home__content');\n    home__content.remove();\n    let overlay = document.getElementById('overlay');\n    let newHC = document.createElement('div');\n    newHC.classList.add('home__content');\n    newHC.setAttribute(\"id\", \"home__content\");\n    overlay.appendChild(newHC);\n}\n\n//# sourceURL=webpack://webpack-demo/./src/clearContainers.js?");
+
+/***/ }),
+
 /***/ "./src/home.js":
 /*!*********************!*\
   !*** ./src/home.js ***!
@@ -36,7 +46,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/home.js */ \"./src/home.js\");\n/* harmony import */ var _src_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/menu.js */ \"./src/menu.js\");\n/* harmony import */ var _src_about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/about.js */ \"./src/about.js\");\n\n\n\n\n// openHome();\n// openMenu();\n// openAbout();\n\nlet home = document.getElementById('home');\nhome.addEventListener(\"click\", _src_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\nlet menu = document.getElementById('menu');\nmenu.addEventListener(\"click\", _src_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\nlet about = document.getElementById('about');\nabout.addEventListener(\"click\", _src_about_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _src_home_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../src/home.js */ \"./src/home.js\");\n/* harmony import */ var _src_menu_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../src/menu.js */ \"./src/menu.js\");\n/* harmony import */ var _src_about_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../src/about.js */ \"./src/about.js\");\n/* harmony import */ var _src_clearContainers_js__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../src/clearContainers.js */ \"./src/clearContainers.js\");\n\n\n\n\n\n// openHome();\n// openMenu();\n// openAbout();\n\nlet home = document.getElementById('home');\nhome.addEventListener(\"click\", _src_clearContainers_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nhome.addEventListener(\"click\", _src_home_js__WEBPACK_IMPORTED_MODULE_0__[\"default\"]);\n\n\nlet menu = document.getElementById('menu');\nmenu.addEventListener(\"click\", _src_clearContainers_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nmenu.addEventListener(\"click\", _src_menu_js__WEBPACK_IMPORTED_MODULE_1__[\"default\"]);\n\n\nlet about = document.getElementById('about');\nabout.addEventListener(\"click\", _src_clearContainers_js__WEBPACK_IMPORTED_MODULE_3__[\"default\"]);\nabout.addEventListener(\"click\", _src_about_js__WEBPACK_IMPORTED_MODULE_2__[\"default\"]);\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ }),
 
